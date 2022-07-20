@@ -14,7 +14,7 @@ function drinkChoice() {
     alreadyClicked == true;
         setTimeout(function() {
       window.location.href = "index.html";
-}, 1000);
+}, 3000);
   }
 }
 function dontDrinkChoice() {
@@ -30,18 +30,18 @@ function dontDrinkChoice() {
     if (window.localStorage.getItem('shelter').localeCompare("true") != 0) {
           setTimeout(function() {
       window.location.href = "shelter.html";
-}, 1000);
+}, 3000);
     }
     else {
       if (window.localStorage.getItem('food').localeCompare("true") != 0) {
     setTimeout(function() {
       window.location.href = "food.html";
-}, 1000);
+}, 3000);
       }
       else {
     setTimeout(function() {
       window.location.href = "end.html";
-}, 1000);
+}, 3000);
       }
     }
   }

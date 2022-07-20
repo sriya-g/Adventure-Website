@@ -15,18 +15,18 @@ function goLeft() {
     if (window.localStorage.getItem('water').localeCompare("true") != 0) {
     setTimeout(function() {
       window.location.href = "water.html";
-}, 1000);
+}, 3000);
     }
     else {
       if (window.localStorage.getItem('food').localeCompare("true") != 0) {
     setTimeout(function() {
       window.location.href = "food.html";
-}, 1000);
+}, 3000);
       }
       else {
     setTimeout(function() {
       window.location.href = "end.html";
-}, 1000);
+}, 3000);
       }
     }
   }
@@ -39,18 +39,18 @@ function goRight() {
     if (window.localStorage.getItem('water').localeCompare("true") != 0) {
     setTimeout(function() {
       window.location.href = "water.html";
-}, 1000);
+}, 3000);
     }
     else {
       if (window.localStorage.getItem('food').localeCompare("true") != 0) {
     setTimeout(function() {
       window.location.href = "food.html";
-}, 1000);
+}, 3000);
       }
       else {
     setTimeout(function() {
       window.location.href = "end.html";
-}, 1000);
+}, 3000);
       }
     }
   }
