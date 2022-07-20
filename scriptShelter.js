@@ -13,14 +13,20 @@ function goLeft() {
     window.localStorage.setItem('shelter', "true");
     alreadyClicked = true;
     if (window.localStorage.getItem('water').localeCompare("true") != 0) {
+    setTimeout(function() {
       window.location.href = "water.html";
+}, 1000);
     }
     else {
       if (window.localStorage.getItem('food').localeCompare("true") != 0) {
-        window.location.href = "food.html";
+    setTimeout(function() {
+      window.location.href = "food.html";
+}, 1000);
       }
       else {
-        window.location.href = "end.html";
+    setTimeout(function() {
+      window.location.href = "end.html";
+}, 1000);
       }
     }
   }
@@ -31,14 +37,20 @@ function goRight() {
     dispText.innerHTML = "The wide-open area may be beautiful and sunny, but there's no shelter here.";
     alreadyClicked = true;
     if (window.localStorage.getItem('water').localeCompare("true") != 0) {
+    setTimeout(function() {
       window.location.href = "water.html";
+}, 1000);
     }
     else {
       if (window.localStorage.getItem('food').localeCompare("true") != 0) {
-        window.location.href = "food.html";
+    setTimeout(function() {
+      window.location.href = "food.html";
+}, 1000);
       }
       else {
-        window.location.href = "end.html";
+    setTimeout(function() {
+      window.location.href = "end.html";
+}, 1000);
       }
     }
   }

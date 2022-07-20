@@ -15,6 +15,9 @@ function playDeadPicked() {
     dispChoice.innerHTML = "The bear eats you anyway. Game over.";
     dispChoice.classList.add("end");
     alreadyClicked == true;
+    setTimeout(function() {
+      window.location.href = "index.html";
+}, 1000);
   }
 }
 
@@ -24,14 +27,20 @@ function runAwayPicked() {
     window.localStorage.setItem('thermos', "false");
     alreadyClicked = true;
     if (window.localStorage.getItem('water').localeCompare("true") != 0) {
+    setTimeout(function() {
       window.location.href = "water.html";
+}, 1000);
     }
     else {
       if (window.localStorage.getItem('shelter').localeCompare("true") != 0) {
-        window.location.href = "shelter.html";
+    setTimeout(function() {
+      window.location.href = "shelter.html";
+}, 1000);
       }
       else {
-        window.location.href = "end.html";
+    setTimeout(function() {
+      window.location.href = "end.html";
+}, 1000);
       }
     }
   }
@@ -43,14 +52,20 @@ function attackPicked() {
     window.localStorage.setItem('food', "true");
     alreadyClicked = true;
     if (window.localStorage.getItem('water').localeCompare("true") != 0) {
+    setTimeout(function() {
       window.location.href = "water.html";
+}, 1000);
     }
     else {
       if (window.localStorage.getItem('shelter').localeCompare("true") != 0) {
-        window.location.href = "shelter.html";
+    setTimeout(function() {
+      window.location.href = "shelter.html";
+}, 1000);
       }
       else {
-        window.location.href = "end.html";
+    setTimeout(function() {
+      window.location.href = "end.html";
+}, 1000);
       }
     }
   }

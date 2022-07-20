@@ -12,6 +12,9 @@ function drinkChoice() {
     dispChoice.innerHTML = "The water was poisonous! Game over.";
     dispChoice.classList.add("end");
     alreadyClicked == true;
+        setTimeout(function() {
+      window.location.href = "index.html";
+}, 1000);
   }
 }
 function dontDrinkChoice() {
@@ -25,14 +28,20 @@ function dontDrinkChoice() {
     alreadyClicked = true;
     localStorage.setItem('water', "true");
     if (window.localStorage.getItem('shelter').localeCompare("true") != 0) {
+          setTimeout(function() {
       window.location.href = "shelter.html";
+}, 1000);
     }
     else {
       if (window.localStorage.getItem('food').localeCompare("true") != 0) {
-        window.location.href = "food.html";
+    setTimeout(function() {
+      window.location.href = "food.html";
+}, 1000);
       }
       else {
-        window.location.href = "end.html";
+    setTimeout(function() {
+      window.location.href = "end.html";
+}, 1000);
       }
     }
   }
